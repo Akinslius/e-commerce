@@ -10,8 +10,8 @@ body{
 .logo{
     border: 1px solid  rgb(0, 60, 255);
     border-radius: 20px;
-    width: 7%;
-    height: 7%;
+    width: 50%;
+    height: 50%;
 }
 .logo:hover{
     border: 2px solid rgba(105, 131, 218, 0.877);
@@ -27,4 +27,11 @@ body{
     height: 200px;
     object-fit: contain;
    
+}
+.admin_img{
+    width: 100px;
+    object-fit: contain;
+    border: 2px solid blue;
+    border-radius: 20px;
+
 }

@@ -32,9 +32,42 @@
 
             </div>
     </nav>
+
+    <!-- second child -->
+    <div class="bg-light">
+        <h3 class="text-center p-2">Manage Details</h3>
+
+
+    </div>
+    <!-- Third child -->
+    <div class="row">
+        <div class="col-md-12 bg-secondary p-1 d-flex align-items-center">
+            <div>
+                <a href="#"><img src="../img/happy-client/akins.jpg" class="admin_img m-3"> </a>
+                <p class="text-center text-light">Admin Name</p>
+            </div>
+            <div class="button text-center m-auto">
+                <button><a href="" class="nav-link text-light p-1 bg-info">Insert Product</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">View Products</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">Insert Categories</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">View Categories</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">Insert Brands</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">View brands</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">All orders</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">All Payment</a></button>
+                <button><a href="" class="nav-link text-light p-1 bg-info">List users</a></button>
+                <br>
+                <button class="my-2"><a href="" class="nav-link text-light p-1 bg-info">Log out</a></button>
+            </div>
+        </div>
+    </div>
        
         
+<!-- last child -->
 
+<div class="bg-info p-3 text-center">
+    <p>All rights reserved. Designed by <a href="https://akinslius.netlify.app//" class="footer-link">Asatech Hub</a></p>
+</div>
        
     </div>
 
