@@ -47,11 +47,11 @@
                 <p class="text-center text-light">Admin Name</p>
             </div>
             <div class="button text-center m-auto">
-                <button><a href="insert_categories.php" class="nav-link text-light p-1 bg-info">Insert Product</a></button>
+                <button><a href="#" class="nav-link text-light p-1 bg-info">Insert Product</a></button>
                 <button><a href="" class="nav-link text-light p-1 bg-info">View Products</a></button>
-                <button><a href="" class="nav-link text-light p-1 bg-info">Insert Categories</a></button>
+                <button><a href="index.php?insert_category" class="nav-link text-light p-1 bg-info">Insert Categories</a></button>
                 <button><a href="" class="nav-link text-light p-1 bg-info">View Categories</a></button>
-                <button><a href="" class="nav-link text-light p-1 bg-info">Insert Brands</a></button>
+                <button><a href="index.php?insert_brands" class="nav-link text-light p-1 bg-info">Insert Brands</a></button>
                 <button><a href="" class="nav-link text-light p-1 bg-info">View brands</a></button>
                 <button><a href="" class="nav-link text-light p-1 bg-info">All orders</a></button>
                 <button><a href="" class="nav-link text-light p-1 bg-info">All Payment</a></button>
@@ -62,6 +62,21 @@
         </div>
     </div>
        
+
+<!-- fourth child -->
+<div class="container my-5">
+    <?php
+    if(isset($_GET['insert_category'])){
+        include('insert_categories.php');
+    }
+
+    if(isset($_GET['insert_brands'])){
+        include('insert_brands.php');
+    }
+
+    ?>
+</div>
+
         
 <!-- last child -->
 
