@@ -172,26 +172,23 @@
               <h4>Delivery Brands</h4>
             </a>
          </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              Brand 1
-            </a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              Brand 2
-            </a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              Brand 3
-            </a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              Brand 4
-            </a>
-         </li>
+<?php
+include ('include/connect.php');
+$sql = "SELECT * FROM `brand` ";
+$result = mysqli_query($con,$sql);
+
+while ($row= mysqli_fetch_assoc($result)){
+  $brand_title = $row['brand_title'];
+  $brand_id = $row['brand_id'];
+
+  echo " <li class='nav-item'>
+  <a href='index.php?brand=$brand_id' class='nav-link text-light'> $brand_title</a> </li> ";
+}
+
+
+
+
+?>
       </ul>
 
       <!-- categories to be displayed -->
@@ -201,26 +198,22 @@
               <h4>Categories</h4>
             </a>
          </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              category 1
-            </a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              category 2
-            </a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              category 3
-            </a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link text-light ">
-              category 4
-            </a>
-         </li>
+<?php
+// include ('include/connect.php');
+$sql_cat = "SELECT * FROM `category` ";
+$result_cat = mysqli_query($con,$sql_cat);
+
+while ($row_cat= mysqli_fetch_assoc($result_cat)){
+  $category_title = $row_cat['category_title'];
+  $category_id = $row_cat['category_id'];
+
+  echo " <li class='nav-item'>
+  <a href='index.php?category=$category_id' class='nav-link text-light'> $category_title</a> </li> ";
+}
+
+?>
+
+
       </ul>
         <!-- side nav -->
 
